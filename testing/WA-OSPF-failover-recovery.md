@@ -10,7 +10,7 @@ Source WA-CORE-01; remote destination 10.10.250.14 on WA-DSW-02 (10.10.250.12/30
 | --- | --- | --- | --- | --- |
 | Baseline | 10.10.250.6 | Gi0/2 | 110/2 | 5/5 |
 | After Gi0/2 shutdown and convergence | 10.10.250.2 | Gi0/1 | 110/3 | 5/5; RTT 0/0/1 ms |
-| After no shutdown and reconvergence | 10.10.250.6 | Gi0/2 | 110/2 | Retest pending |
+| After no shutdown and reconvergence | 10.10.250.6 | Gi0/2 | 110/2 | 5/5; RTT 0/0/0 ms |
 
 Commands on WA-CORE-01:
 ```text
@@ -33,4 +33,4 @@ O 10.10.250.12 [110/2] via 10.10.250.6, 00:00:43, GigabitEthernet0/2
 All four transit routes were present again. No static routes or manual metric changes were needed.
 
 ## Conclusion and limits
-Automatic failover and preferred-route restoration verified by CLI screenshots. Ping confirmed reachability after failure convergence, not continuous zero-loss service during transition. Exact convergence duration was not measured. Post-restoration ping and saving configurations remain pending. Original screenshots have not been uploaded.
+Automatic failover and preferred-route restoration verified by CLI screenshots. Ping confirmed reachability after failure convergence, not continuous zero-loss service during transition. Exact convergence duration was not measured. Post-restoration ping verified 5/5 (100%), RTT 0/0/0 ms, with the preferred cost 2 route present in the same screenshot. Saving configurations remains pending. Original screenshots have not been uploaded.
