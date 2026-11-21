@@ -2,7 +2,7 @@
 
 Design, implementation, and security of a multi-state Cisco enterprise network connecting three geographically distributed offices.
 
-**Status:** Planning and design — implementation and validation have not yet begun.
+**Status:** Phase 2 — Washington headquarters implementation in progress. First routed link configured; interface checks verified, peer ping success reported.
 
 ## Overview
 
@@ -14,7 +14,7 @@ This personal engineering lab models the infrastructure of a fictional enterpris
 | San Jose, California | Regional engineering office | 150 | 10.20.0.0/16 |
 | Austin, Texas | Regional operations office | 100 | 10.30.0.0/16 |
 
-The lab will use representative endpoints rather than 550 individual simulated devices. The platform and final architecture are yet to be selected.
+The lab will use representative endpoints rather than 550 individual simulated devices. The initial platform is Cisco Packet Tracer 9.0.1. The proposed architecture is established; detailed design and feature validation continue as implementation progresses. See [enterprise design](architecture/enterprise-design.md).
 
 ## Planned technical scope
 
@@ -35,6 +35,12 @@ The lab will use representative endpoints rather than 550 individual simulated d
 - [ ] Phase 6: Enterprise services and monitoring
 - [ ] Phase 7: Connectivity, security and failover testing
 - [ ] Phase 8: Final documentation and portfolio review
+
+## Implementation milestones
+
+| Milestone | Status | Evidence |
+| --- | --- | --- |
+| WA-01: First core-to-distribution routed link | Interfaces verified; peer ping success reported | [Configuration](configurations/WA/01-core-distribution-routed-link.md), [test record](testing/WA-01-routed-link.md), [troubleshooting](troubleshooting/WA-01-self-ping.md) |
 
 ## Repository structure
 
