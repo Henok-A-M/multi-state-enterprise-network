@@ -17,4 +17,12 @@ router ospf 1
  network 10.10.250.4 0.0.0.3 area 0
 ```
 
-All four configurations observed in CLI screenshots. Ethernet broadcast network type retained, with DR/BDR election. Four adjacencies observed reaching FULL. See [validation](../../testing/WA-OSPF-validation.md). Failover testing, configuration persistence, and routing security hardening remain pending.
+All four configurations observed in CLI screenshots. Ethernet broadcast network type retained, with DR/BDR election. Four adjacencies observed reaching FULL. See [validation](../../testing/WA-OSPF-validation.md). Failover and configuration saving were subsequently recorded; routing security hardening remains pending.
+
+## Visual evidence
+
+- [08-WA-OSPF-first-adjacency](../../screenshots/08-WA-OSPF-first-adjacency.png)
+- [09-WA-OSPF-learned-route](../../screenshots/09-WA-OSPF-learned-route.png)
+- [11-WA-OSPF-DSW-02-adjacencies](../../screenshots/11-WA-OSPF-DSW-02-adjacencies.png)
+
+[Complete screenshot index](../../screenshots/README.md)
