@@ -10,6 +10,8 @@ Lesson: a successful command is not necessarily a valid test of the intended req
 
 ## Visual evidence
 
-- [02-WA-01-peer-ping](../screenshots/02-WA-01-peer-ping.png)
+### 01 peer ping
+
+![02-WA-01-peer-ping](../screenshots/02-WA-01-peer-ping.png)
 
 [Complete screenshot index](../screenshots/README.md)
