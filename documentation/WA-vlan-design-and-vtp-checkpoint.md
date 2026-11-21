@@ -42,4 +42,11 @@ Verify the operating mode is Transparent before proceeding. Inspect and configur
 
 ## Persistence and evidence
 
-Core and distribution routing configurations were saved at the previous milestone. Saving subsequent trunk and VLAN changes has not yet been confirmed. Packet Tracer project file and original screenshots are not uploaded to this repository. CLI evidence was reviewed in the lab conversation.
+Core and distribution routing configurations were saved at the previous milestone. Saving subsequent trunk and VLAN changes has not yet been confirmed. Selected CLI screenshots are uploaded and linked below. The Packet Tracer project file is still pending.
+
+## Visual evidence
+
+- [20-WA-DSW-02-VLAN-database](../screenshots/20-WA-DSW-02-VLAN-database.png)
+- [21-WA-ASW-01-VTP-baseline](../screenshots/21-WA-ASW-01-VTP-baseline.png)
+
+[Complete screenshot index](../screenshots/README.md)
