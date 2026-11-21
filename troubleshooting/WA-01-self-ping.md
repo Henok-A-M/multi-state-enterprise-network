@@ -4,6 +4,6 @@ During verification, both switches initially pinged their own configured IP addr
 
 Resolution: identify the current device from its IOS hostname and ping the other switch's address. From WA-DSW-01, ping 10.10.250.1. From WA-CORE-01, ping 10.10.250.2.
 
-The user reported the corrected test succeeded. Screenshot evidence of that final test is pending.
+The user reported the corrected test succeeded. A subsequent screenshot confirmed the correct CORE-01 to DSW-01 peer ping (5/5 replies).
 
 Lesson: a successful command is not necessarily a valid test of the intended requirement. Verify the source, destination and test objective before recording results.
