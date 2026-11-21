@@ -31,6 +31,8 @@ Status: PASS — interface checks and CORE-01 to DSW-01 peer connectivity verifi
 
 ## Visual evidence
 
-- [02-WA-01-peer-ping](../screenshots/02-WA-01-peer-ping.png)
+### 01 peer ping
+
+![02-WA-01-peer-ping](../screenshots/02-WA-01-peer-ping.png)
 
 [Complete screenshot index](../screenshots/README.md)
