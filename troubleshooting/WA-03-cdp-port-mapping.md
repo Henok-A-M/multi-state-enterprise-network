@@ -8,8 +8,14 @@ Lesson: use discovery output to validate actual connections before assigning add
 
 ## Visual evidence
 
-- [04-WA-CDP-port-discovery](../screenshots/04-WA-CDP-port-discovery.png)
-- [06-WA-03-peer-ping](../screenshots/06-WA-03-peer-ping.png)
-- [07-WA-04-peer-ping](../screenshots/07-WA-04-peer-ping.png)
+### CDP port discovery
+
+![04-WA-CDP-port-discovery](../screenshots/04-WA-CDP-port-discovery.png)
+### 03 peer ping
+
+![06-WA-03-peer-ping](../screenshots/06-WA-03-peer-ping.png)
+### 04 peer ping
+
+![07-WA-04-peer-ping](../screenshots/07-WA-04-peer-ping.png)
 
 [Complete screenshot index](../screenshots/README.md)
