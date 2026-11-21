@@ -19,4 +19,14 @@ Both tests appear in the same final CORE-01 CLI screenshot. This validates routi
 - CORE-01: adjacency log confirms both 1.1.1.3 and 1.1.1.4 reached FULL.
 - DSW-01 learned 10.10.250.4/30 through OSPF, with administrative distance 110 and metric 2, next hop 10.10.250.1 via Gi0/1.
 
-Screenshot evidence reviewed in lab session; original image files not uploaded to GitHub. Next: inspect baseline routes and run a controlled link-failure test, then restore link and verify recovery.
+Selected screenshots are uploaded and linked below. Next: inspect baseline routes and run a controlled link-failure test, then restore link and verify recovery.
+
+## Visual evidence
+
+- [08-WA-OSPF-first-adjacency](../screenshots/08-WA-OSPF-first-adjacency.png)
+- [09-WA-OSPF-learned-route](../screenshots/09-WA-OSPF-learned-route.png)
+- [10-WA-OSPF-CORE-02-adjacency](../screenshots/10-WA-OSPF-CORE-02-adjacency.png)
+- [11-WA-OSPF-DSW-02-adjacencies](../screenshots/11-WA-OSPF-DSW-02-adjacencies.png)
+- [12-WA-OSPF-before-after](../screenshots/12-WA-OSPF-before-after.png)
+
+[Complete screenshot index](../screenshots/README.md)
