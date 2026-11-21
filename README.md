@@ -2,7 +2,7 @@
 
 Design, implementation, and security of a multi-state Cisco enterprise network connecting three geographically distributed offices.
 
-**Status:** Phase 2 — Washington headquarters implementation in progress. All four core-to-distribution routed links and OSPF Area 0 configured and tested; controlled OSPF failover and preferred route recovery verified; final recovery ping verified 5/5.
+**Status:** Phase 2 — Washington headquarters implementation in progress. All four core-to-distribution routed links and OSPF Area 0 configured and tested; controlled OSPF failover and preferred route recovery verified; final recovery ping verified 5/5. Configuration saves confirmed by user; access-layer implementation next.
 
 ## Overview
 
