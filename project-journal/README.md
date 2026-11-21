@@ -30,10 +30,20 @@ Retained the 2950-24 access switches due to distribution Gigabit port constraint
 
 ## Visual evidence
 
-- [12-WA-OSPF-before-after](../screenshots/12-WA-OSPF-before-after.png)
-- [13-WA-OSPF-failover](../screenshots/13-WA-OSPF-failover.png)
-- [14-WA-OSPF-recovery](../screenshots/14-WA-OSPF-recovery.png)
-- [20-WA-DSW-02-VLAN-database](../screenshots/20-WA-DSW-02-VLAN-database.png)
-- [21-WA-ASW-01-VTP-baseline](../screenshots/21-WA-ASW-01-VTP-baseline.png)
+### OSPF before after
+
+![12-WA-OSPF-before-after](../screenshots/12-WA-OSPF-before-after.png)
+### OSPF failover
+
+![13-WA-OSPF-failover](../screenshots/13-WA-OSPF-failover.png)
+### OSPF recovery
+
+![14-WA-OSPF-recovery](../screenshots/14-WA-OSPF-recovery.png)
+### DSW 02 VLAN database
+
+![20-WA-DSW-02-VLAN-database](../screenshots/20-WA-DSW-02-VLAN-database.png)
+### ASW 01 VTP baseline
+
+![21-WA-ASW-01-VTP-baseline](../screenshots/21-WA-ASW-01-VTP-baseline.png)
 
 [Complete screenshot index](../screenshots/README.md)
