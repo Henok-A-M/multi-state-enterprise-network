@@ -46,7 +46,11 @@ Core and distribution routing configurations were saved at the previous mileston
 
 ## Visual evidence
 
-- [20-WA-DSW-02-VLAN-database](../screenshots/20-WA-DSW-02-VLAN-database.png)
-- [21-WA-ASW-01-VTP-baseline](../screenshots/21-WA-ASW-01-VTP-baseline.png)
+### DSW 02 VLAN database
+
+![20-WA-DSW-02-VLAN-database](../screenshots/20-WA-DSW-02-VLAN-database.png)
+### ASW 01 VTP baseline
+
+![21-WA-ASW-01-VTP-baseline](../screenshots/21-WA-ASW-01-VTP-baseline.png)
 
 [Complete screenshot index](../screenshots/README.md)
