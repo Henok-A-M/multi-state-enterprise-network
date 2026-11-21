@@ -2,7 +2,7 @@
 
 Design, implementation, and security of a multi-state Cisco enterprise network connecting three geographically distributed offices.
 
-**Status:** Phase 2 — Washington headquarters implementation in progress. All four core-to-distribution routed links and OSPF Area 0 configured and tested; failover validation pending.
+**Status:** Phase 2 — Washington headquarters implementation in progress. All four core-to-distribution routed links and OSPF Area 0 configured and tested; controlled OSPF failover and preferred route recovery verified; final recovery ping pending.
 
 ## Overview
 
@@ -43,6 +43,7 @@ The lab will use representative endpoints rather than 550 individual simulated d
 | WA-01: First core-to-distribution routed link | Passed: interfaces up/up and peer ping 5/5 | [Configuration](configurations/WA/01-core-distribution-routed-link.md), [test record](testing/WA-01-routed-link.md), [troubleshooting](troubleshooting/WA-01-self-ping.md) |
 | Washington routed infrastructure (WA-01–04) | Four direct peer links tested; WA-02 recovery reported | [Port and IP map](documentation/WA-routed-link-map.md), [validation](testing/WA-core-distribution-validation.md), [CDP correction](troubleshooting/WA-03-cdp-port-mapping.md) |
 | WA OSPF Area 0 | Four FULL adjacencies observed; remote subnet ping improved from 0/5 to 5/5 | [Configuration](configurations/WA/03-ospf-area-zero.md), [validation](testing/WA-OSPF-validation.md) |
+| WA OSPF failover and recovery | Alternate path ping 5/5; preferred route restored | [Failover test](testing/WA-OSPF-failover-recovery.md) |
 
 ## Repository structure
 
