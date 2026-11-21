@@ -28,6 +28,8 @@ Centralized directory, DNS, DHCP, authentication, logging and monitoring are pla
 
 ## Visual evidence
 
-- [01-WA-initial-switch-layout](../screenshots/01-WA-initial-switch-layout.png)
+### initial switch layout
+
+![01-WA-initial-switch-layout](../screenshots/01-WA-initial-switch-layout.png)
 
 [Complete screenshot index](../screenshots/README.md)
