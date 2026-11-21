@@ -25,3 +25,9 @@ The four core-to-distribution routed links and single-area OSPF are implemented 
 Full-mesh logical WAN between Washington, California and Texas with site-to-site IPsec, dual ISP connections and redundant WAN routers. Use dynamic routing where supported by the selected tunnel design. Plan active/standby firewalls between WAN routers and the internal core, with a separate DMZ and default-deny access from the DMZ to inside. Department segmentation uses VLANs and routing-boundary ACLs/firewall policies.
 
 Centralized directory, DNS, DHCP, authentication, logging and monitoring are planned where supported. Cisco Packet Tracer 9.0.1 is the initial platform; real Active Directory and enterprise-grade stateful firewall HA require separate emulation or physical lab validation. All features above are planned unless explicitly recorded as implemented in milestone documentation.
+
+## Visual evidence
+
+- [01-WA-initial-switch-layout](../screenshots/01-WA-initial-switch-layout.png)
+
+[Complete screenshot index](../screenshots/README.md)
