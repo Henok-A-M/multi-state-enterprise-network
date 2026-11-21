@@ -14,3 +14,12 @@ All ports use routed mode (no switchport), mask 255.255.255.252, and no shutdown
 Both GigabitEthernet ports on each multilayer switch are occupied. Additional future connections must use available FastEthernet ports or a different simulated device model; this is a simulation constraint.
 
 See [validation](../testing/WA-core-distribution-validation.md).
+
+## Visual evidence
+
+- [02-WA-01-peer-ping](../screenshots/02-WA-01-peer-ping.png)
+- [03-WA-02-peer-ping](../screenshots/03-WA-02-peer-ping.png)
+- [06-WA-03-peer-ping](../screenshots/06-WA-03-peer-ping.png)
+- [07-WA-04-peer-ping](../screenshots/07-WA-04-peer-ping.png)
+
+[Complete screenshot index](../screenshots/README.md)
