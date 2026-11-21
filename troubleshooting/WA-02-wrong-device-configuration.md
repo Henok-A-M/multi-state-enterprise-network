@@ -12,7 +12,14 @@ ip address 10.10.250.5 255.255.255.252
 end
 ping 10.10.250.6
 ```
-Initial recovery ping: 80% reported. Repeat ping: user confirmed success. ARP resolution is a possible explanation for the initial loss, not independently proven. Recovery screenshot pending.
+Initial recovery ping: 80% reported. Repeat ping: user confirmed success. ARP resolution is a possible explanation for the initial loss, not independently proven. The incident and earlier successful peer ping screenshots are linked below; a separate recovery screenshot is not available.
 
 ## Prevention
 Confirm IOS hostname and target interface before any configuration change. Compare with the port/IP map and verify peer connectivity after changes. A link being up/up does not establish correct IP addressing.
+
+## Visual evidence
+
+- [05-WA-wrong-device-IP-incident](../screenshots/05-WA-wrong-device-IP-incident.png)
+- [03-WA-02-peer-ping](../screenshots/03-WA-02-peer-ping.png)
+
+[Complete screenshot index](../screenshots/README.md)
