@@ -45,3 +45,9 @@ no shutdown
 Screenshots supplied during the lab show Switchport: Disabled on CORE-01 (reported CLI output), and both Gi0/1 interfaces up/up with their respective IP addresses. The user reported a successful ping from WA-DSW-01 to 10.10.250.1 after correcting earlier self-ping tests. A subsequent screenshot confirms the reverse peer test from WA-CORE-01 to 10.10.250.2: 5/5 replies, 100% success. See [test record](../../testing/WA-01-routed-link.md).
 
 IP routing across multiple subnets and OSPF have not yet been implemented or tested. Saving startup configurations was instructed but not confirmed.
+
+## Visual evidence
+
+- [02-WA-01-peer-ping](../../screenshots/02-WA-01-peer-ping.png)
+
+[Complete screenshot index](../../screenshots/README.md)
