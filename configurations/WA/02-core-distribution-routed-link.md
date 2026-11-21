@@ -11,7 +11,11 @@ CORE-02 CDP output also established actual port mapping: Gi0/1 to DSW-02 Gi0/1, 
 
 ## Visual evidence
 
-- [03-WA-02-peer-ping](../../screenshots/03-WA-02-peer-ping.png)
-- [04-WA-CDP-port-discovery](../../screenshots/04-WA-CDP-port-discovery.png)
+### 02 peer ping
+
+![03-WA-02-peer-ping](../../screenshots/03-WA-02-peer-ping.png)
+### CDP port discovery
+
+![04-WA-CDP-port-discovery](../../screenshots/04-WA-CDP-port-discovery.png)
 
 [Complete screenshot index](../../screenshots/README.md)
