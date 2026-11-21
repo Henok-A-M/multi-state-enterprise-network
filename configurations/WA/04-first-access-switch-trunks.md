@@ -23,10 +23,20 @@ The departmental VLAN design is approved and nine VLANs are created on WA-DSW-02
 
 ## Visual evidence
 
-- [15-WA-2950T-port-inventory](../../screenshots/15-WA-2950T-port-inventory.png)
-- [16-WA-DSW-01-trunk](../../screenshots/16-WA-DSW-01-trunk.png)
-- [17-WA-DTP-negotiated-trunk](../../screenshots/17-WA-DTP-negotiated-trunk.png)
-- [18-WA-ASW-01-static-trunks](../../screenshots/18-WA-ASW-01-static-trunks.png)
-- [19-WA-DSW-02-trunk](../../screenshots/19-WA-DSW-02-trunk.png)
+### 2950T port inventory
+
+![15-WA-2950T-port-inventory](../../screenshots/15-WA-2950T-port-inventory.png)
+### DSW 01 trunk
+
+![16-WA-DSW-01-trunk](../../screenshots/16-WA-DSW-01-trunk.png)
+### DTP negotiated trunk
+
+![17-WA-DTP-negotiated-trunk](../../screenshots/17-WA-DTP-negotiated-trunk.png)
+### ASW 01 static trunks
+
+![18-WA-ASW-01-static-trunks](../../screenshots/18-WA-ASW-01-static-trunks.png)
+### DSW 02 trunk
+
+![19-WA-DSW-02-trunk](../../screenshots/19-WA-DSW-02-trunk.png)
 
 [Complete screenshot index](../../screenshots/README.md)
