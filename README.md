@@ -2,7 +2,7 @@
 
 Design, implementation, and security of a multi-state Cisco enterprise network connecting three geographically distributed offices.
 
-**Status:** Phase 2 — Washington headquarters implementation in progress. First routed link configured; interface checks verified, peer ping success reported.
+**Status:** Phase 2 — Washington headquarters implementation in progress. First routed link configured; interface checks and peer connectivity verified.
 
 ## Overview
 
@@ -40,7 +40,7 @@ The lab will use representative endpoints rather than 550 individual simulated d
 
 | Milestone | Status | Evidence |
 | --- | --- | --- |
-| WA-01: First core-to-distribution routed link | Interfaces verified; peer ping success reported | [Configuration](configurations/WA/01-core-distribution-routed-link.md), [test record](testing/WA-01-routed-link.md), [troubleshooting](troubleshooting/WA-01-self-ping.md) |
+| WA-01: First core-to-distribution routed link | Passed: interfaces up/up and peer ping 5/5 | [Configuration](configurations/WA/01-core-distribution-routed-link.md), [test record](testing/WA-01-routed-link.md), [troubleshooting](troubleshooting/WA-01-self-ping.md) |
 
 ## Repository structure
 
