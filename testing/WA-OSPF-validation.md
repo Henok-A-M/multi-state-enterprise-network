@@ -23,10 +23,20 @@ Selected screenshots are uploaded and linked below. Next: inspect baseline route
 
 ## Visual evidence
 
-- [08-WA-OSPF-first-adjacency](../screenshots/08-WA-OSPF-first-adjacency.png)
-- [09-WA-OSPF-learned-route](../screenshots/09-WA-OSPF-learned-route.png)
-- [10-WA-OSPF-CORE-02-adjacency](../screenshots/10-WA-OSPF-CORE-02-adjacency.png)
-- [11-WA-OSPF-DSW-02-adjacencies](../screenshots/11-WA-OSPF-DSW-02-adjacencies.png)
-- [12-WA-OSPF-before-after](../screenshots/12-WA-OSPF-before-after.png)
+### OSPF first adjacency
+
+![08-WA-OSPF-first-adjacency](../screenshots/08-WA-OSPF-first-adjacency.png)
+### OSPF learned route
+
+![09-WA-OSPF-learned-route](../screenshots/09-WA-OSPF-learned-route.png)
+### OSPF CORE 02 adjacency
+
+![10-WA-OSPF-CORE-02-adjacency](../screenshots/10-WA-OSPF-CORE-02-adjacency.png)
+### OSPF DSW 02 adjacencies
+
+![11-WA-OSPF-DSW-02-adjacencies](../screenshots/11-WA-OSPF-DSW-02-adjacencies.png)
+### OSPF before after
+
+![12-WA-OSPF-before-after](../screenshots/12-WA-OSPF-before-after.png)
 
 [Complete screenshot index](../screenshots/README.md)
