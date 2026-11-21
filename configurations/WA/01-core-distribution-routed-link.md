@@ -48,6 +48,8 @@ IP routing across multiple subnets and OSPF have not yet been implemented or tes
 
 ## Visual evidence
 
-- [02-WA-01-peer-ping](../../screenshots/02-WA-01-peer-ping.png)
+### 01 peer ping
+
+![02-WA-01-peer-ping](../../screenshots/02-WA-01-peer-ping.png)
 
 [Complete screenshot index](../../screenshots/README.md)
