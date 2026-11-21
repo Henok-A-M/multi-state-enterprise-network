@@ -37,7 +37,11 @@ Automatic failover and preferred-route restoration verified by CLI screenshots. 
 
 ## Visual evidence
 
-- [13-WA-OSPF-failover](../screenshots/13-WA-OSPF-failover.png)
-- [14-WA-OSPF-recovery](../screenshots/14-WA-OSPF-recovery.png)
+### OSPF failover
+
+![13-WA-OSPF-failover](../screenshots/13-WA-OSPF-failover.png)
+### OSPF recovery
+
+![14-WA-OSPF-recovery](../screenshots/14-WA-OSPF-recovery.png)
 
 [Complete screenshot index](../screenshots/README.md)
