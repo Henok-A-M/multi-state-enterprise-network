@@ -7,3 +7,9 @@ Resolution: identify the current device from its IOS hostname and ping the other
 The user reported the corrected test succeeded. A subsequent screenshot confirmed the correct CORE-01 to DSW-01 peer ping (5/5 replies).
 
 Lesson: a successful command is not necessarily a valid test of the intended requirement. Verify the source, destination and test objective before recording results.
+
+## Visual evidence
+
+- [02-WA-01-peer-ping](../screenshots/02-WA-01-peer-ping.png)
+
+[Complete screenshot index](../screenshots/README.md)
