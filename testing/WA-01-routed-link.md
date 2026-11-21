@@ -27,4 +27,10 @@ Sending 5, 100-byte ICMP Echos to 10.10.250.2, timeout is 2 seconds:
 Success rate is 100 percent (5/5), round-trip min/avg/max = 0/0/0 ms
 ```
 
-Status: PASS — interface checks and CORE-01 to DSW-01 peer connectivity verified. The original screenshot has not been uploaded to the repository. No multi-hop routing or failover tests performed.
+Status: PASS — interface checks and CORE-01 to DSW-01 peer connectivity verified. Selected screenshots are uploaded and linked below. No multi-hop routing or failover tests performed.
+
+## Visual evidence
+
+- [02-WA-01-peer-ping](../screenshots/02-WA-01-peer-ping.png)
+
+[Complete screenshot index](../screenshots/README.md)
