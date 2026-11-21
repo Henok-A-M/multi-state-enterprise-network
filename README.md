@@ -69,12 +69,21 @@ Personal portfolio project by [Henok Molla](https://github.com/Henok-A-M).
 
 ## Visual evidence
 
-- [01-WA-initial-switch-layout](screenshots/01-WA-initial-switch-layout.png)
-- [12-WA-OSPF-before-after](screenshots/12-WA-OSPF-before-after.png)
-- [13-WA-OSPF-failover](screenshots/13-WA-OSPF-failover.png)
-- [14-WA-OSPF-recovery](screenshots/14-WA-OSPF-recovery.png)
-- [20-WA-DSW-02-VLAN-database](screenshots/20-WA-DSW-02-VLAN-database.png)
+### initial switch layout
+
+![01-WA-initial-switch-layout](screenshots/01-WA-initial-switch-layout.png)
+### OSPF before after
+
+![12-WA-OSPF-before-after](screenshots/12-WA-OSPF-before-after.png)
+### OSPF failover
+
+![13-WA-OSPF-failover](screenshots/13-WA-OSPF-failover.png)
+### OSPF recovery
+
+![14-WA-OSPF-recovery](screenshots/14-WA-OSPF-recovery.png)
+### DSW 02 VLAN database
+
+![20-WA-DSW-02-VLAN-database](screenshots/20-WA-DSW-02-VLAN-database.png)
 
 [Complete screenshot index](screenshots/README.md)
 
-![OSPF failover verification](screenshots/13-WA-OSPF-failover.png)
