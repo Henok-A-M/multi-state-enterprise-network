@@ -19,4 +19,14 @@ On WA-ASW-01 Fa0/23 and Fa0/24: switchport mode trunk, no shutdown. IOS hostname
 CLI screenshots on all three switches show the four endpoints in mode on, encapsulation 802.1Q, status trunking. Native VLAN 1, allowed VLANs 1–1005; VLAN 1 is the only active and forwarding VLAN listed. Before explicit configuration, access Fa0/24 showed desirable mode and negotiated 802.1Q, demonstrating DTP behavior. Endpoint identity mapping not yet independently checked with CDP.
 
 ## Next steps
-The departmental VLAN design is approved and nine VLANs are created on WA-DSW-02. See [VLAN and VTP checkpoint](../../documentation/WA-vlan-design-and-vtp-checkpoint.md). VTP mode is unchanged; resume at Step 48. Validate tagged traffic, configure STP roots and redundant gateways, restrict allowed VLANs and harden DTP/native VLAN where supported. Only the first access switch is cabled and tested; no departmental VLAN traffic or access-layer failover tests yet. Screenshots reviewed in chat but not uploaded.
+The departmental VLAN design is approved and nine VLANs are created on WA-DSW-02. See [VLAN and VTP checkpoint](../../documentation/WA-vlan-design-and-vtp-checkpoint.md). VTP mode is unchanged; resume at Step 48. Validate tagged traffic, configure STP roots and redundant gateways, restrict allowed VLANs and harden DTP/native VLAN where supported. Only the first access switch is cabled and tested; no departmental VLAN traffic or access-layer failover tests yet. Selected screenshots are linked below.
+
+## Visual evidence
+
+- [15-WA-2950T-port-inventory](../../screenshots/15-WA-2950T-port-inventory.png)
+- [16-WA-DSW-01-trunk](../../screenshots/16-WA-DSW-01-trunk.png)
+- [17-WA-DTP-negotiated-trunk](../../screenshots/17-WA-DTP-negotiated-trunk.png)
+- [18-WA-ASW-01-static-trunks](../../screenshots/18-WA-ASW-01-static-trunks.png)
+- [19-WA-DSW-02-trunk](../../screenshots/19-WA-DSW-02-trunk.png)
+
+[Complete screenshot index](../../screenshots/README.md)
