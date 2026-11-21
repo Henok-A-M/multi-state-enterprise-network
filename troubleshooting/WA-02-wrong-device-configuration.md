@@ -19,7 +19,11 @@ Confirm IOS hostname and target interface before any configuration change. Compa
 
 ## Visual evidence
 
-- [05-WA-wrong-device-IP-incident](../screenshots/05-WA-wrong-device-IP-incident.png)
-- [03-WA-02-peer-ping](../screenshots/03-WA-02-peer-ping.png)
+### wrong device IP incident
+
+![05-WA-wrong-device-IP-incident](../screenshots/05-WA-wrong-device-IP-incident.png)
+### 02 peer ping
+
+![03-WA-02-peer-ping](../screenshots/03-WA-02-peer-ping.png)
 
 [Complete screenshot index](../screenshots/README.md)
