@@ -55,3 +55,7 @@ Entered `vtp mode transparent` on WA-ASW-01, then ran `do show vtp status`. User
 ## WA-DSW-02 — VLAN preservation after VTP mode change
 
 CLI screenshot verified `VTP Operating Mode : Transparent`, configuration revision 0, and `show vlan brief` listing all nine planned VLANs active (plus five defaults, total 14). Next device: WA-DSW-01. Original screenshot has not yet been added to the GitHub screenshot gallery.
+
+## WA-DSW-01 — VTP and VLAN inventory verified
+
+Screenshot shows VTP Operating Mode Transparent, configuration revision 0, five default VLANs only. No need to configure VTP mode again. Nine approved VLANs are still absent from WA-DSW-01 and require local creation. Next: implement and verify VLAN database on DSW-01.
