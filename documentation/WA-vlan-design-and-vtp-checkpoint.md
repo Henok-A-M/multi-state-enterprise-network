@@ -28,21 +28,15 @@ Observed results:
 
 ## Proposed design — not implemented
 
-Use VTP Transparent mode on participating Layer 2 switches, with explicitly managed local VLAN databases, to reduce the risk of unintended automatic database changes. Transparent mode does not automatically apply received VLAN updates; it may forward VTP messages depending on version and configuration. No VTP setting has been changed during this checkpoint.
+Use VTP Transparent mode on participating Layer 2 switches, with explicitly managed local VLAN databases, to reduce the risk of unintended automatic database changes. Transparent mode does not automatically apply received VLAN updates; it may forward VTP messages depending on version and configuration. WA-ASW-01 was subsequently configured with `vtp mode transparent`; the user verified `VTP Operating Mode : Transparent` using `do show vtp status`. Other switches remain unverified for Transparent mode.
 
 ## Resume instructions
 
-Step 48 remains pending. On WA-ASW-01, currently at privileged EXEC prompt, enter:
-```text
-configure terminal
-vtp mode transparent
-do show vtp status
-```
-Verify the operating mode is Transparent before proceeding. Inspect and configure VTP policy on both distribution switches, verify local VLAN databases, create missing VLANs where required, then implement controlled trunk VLAN lists, native VLAN consistency, STP, SVIs and HSRP. VLAN propagation, tagged endpoint traffic and Layer 2 failover have not been validated.
+Step 48 completed on WA-ASW-01 with user-confirmed verification. Next, inspect VTP status on WA-DSW-02 before changing its mode. Explain each command, verify its effect, and confirm understanding before moving on. Inspect and configure VTP policy on both distribution switches, verify local VLAN databases, create missing VLANs where required, then implement controlled trunk VLAN lists, native VLAN consistency, STP, SVIs and HSRP. VLAN propagation, tagged endpoint traffic and Layer 2 failover have not been validated.
 
 ## Persistence and evidence
 
-Core and distribution routing configurations were saved at the previous milestone. Saving subsequent trunk and VLAN changes has not yet been confirmed. Selected CLI screenshots are uploaded and linked below. The Packet Tracer project file is still pending.
+Core and distribution routing configurations were saved at the previous milestone. Saving subsequent trunk, VLAN, and VTP changes has not yet been confirmed. The VTP Transparent confirmation was reported by the user; no new screenshot has been uploaded for this step. Selected CLI screenshots are uploaded and linked below. The Packet Tracer project file is still pending.
 
 ## Visual evidence
 
