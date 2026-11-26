@@ -83,3 +83,7 @@ Step 59 verified with screenshot: entered `spanning-tree vlan 10 priority 4096`;
 ## Step 65 — WA-ASW-01 STP backup-path activation
 
 After shutting WA-ASW-01 Fa0/23, STP VLAN 10 output first displayed Fa0/24 Root/LRN and then Root/FWD after simulation time elapsed. Root ID still WA-DSW-01 (priority 4106), and root path cost increased from 19 to 38 through WA-DSW-02. Failover path selection is verified; no endpoint packet testing or convergence timing. ASW-01 Fa0/23 still down pending restoration and recovery test. [STP evidence record](../testing/WA-STP-vlan10-baseline.md).
+
+## Washington STP — failover and recovery milestone completed
+
+Step 66 screenshot verified WA-ASW-01 Fa0/23 was restored and returned to Root/FWD, while Fa0/24 returned to Alternate/BLK. Root remained WA-DSW-01 priority 4106, and path cost returned from 38 to 19. We verified VLAN 10 Layer 2 loop prevention, backup-path activation, and preferred-path restoration. No endpoint traffic test or convergence duration measurement yet. Next: save the latest STP changes in Packet Tracer and on relevant devices. [Full STP validation](../testing/WA-STP-vlan10-baseline.md).
