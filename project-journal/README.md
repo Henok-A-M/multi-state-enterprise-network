@@ -91,3 +91,7 @@ Step 66 screenshot verified WA-ASW-01 Fa0/23 was restored and returned to Root/F
 ## Step 67 — WA-ASW-01 configuration saved (user confirmed)
 
 After successfully verifying VLAN 10 STP recovery, user ran `copy running-config startup-config` on WA-ASW-01. Screenshot showed the default destination filename prompt; the user confirmed completion after being instructed to press Enter. Save is user-reported, `[OK]` not independently shown. Before saving DSW-01, restore its Fa0/23 interface from the earlier accidental shutdown if not already restored; its administrative status remains unverified. Then save both distribution switches and Packet Tracer project.
+
+## Step 68–69 — Distribution configuration saves
+
+After restoring WA-DSW-01 Fa0/23 to an administratively enabled state (the interface can still be down if unused), user confirmed saving WA-DSW-01 using `copy running-config startup-config`. User likewise confirmed completing the same startup-config save on WA-DSW-02. Both saves are user-reported; `[OK]` output was not separately captured in chat. The ASW-01 save was previously confirmed. Next: save the entire Packet Tracer `.pkt` project with Ctrl+S; refreshed Packet Tracer file not yet uploaded to GitHub.
