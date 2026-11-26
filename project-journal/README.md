@@ -79,3 +79,7 @@ Step 56 CLI screenshot: spanning-tree protocol IEEE, root ID priority 32778 and 
 ## WA-DSW-01 — VLAN 10 primary STP root configured
 
 Step 59 verified with screenshot: entered `spanning-tree vlan 10 priority 4096`; WA-DSW-01 then reported Root ID priority 4106, MAC 0030.F2B6.B95D and `This bridge is the root`. Fa0/1 transitioned from Root/FWD to Designated/FWD. Next: set and verify the secondary root priority on WA-DSW-02, then plan the distribution Layer 2 interconnect. See [STP test record](../testing/WA-STP-vlan10-baseline.md).
+
+## Step 65 — WA-ASW-01 STP backup-path activation
+
+After shutting WA-ASW-01 Fa0/23, STP VLAN 10 output first displayed Fa0/24 Root/LRN and then Root/FWD after simulation time elapsed. Root ID still WA-DSW-01 (priority 4106), and root path cost increased from 19 to 38 through WA-DSW-02. Failover path selection is verified; no endpoint packet testing or convergence timing. ASW-01 Fa0/23 still down pending restoration and recovery test. [STP evidence record](../testing/WA-STP-vlan10-baseline.md).
