@@ -76,3 +76,7 @@ User administratively shut down WA-ASW-01 Fa0/23, the original Root/FWD access-t
 ## Step 66 — Primary uplink re-enabled, STP recovery check pending
 
 User entered `no shutdown` on WA-ASW-01 Fa0/23. Screenshot confirms `%LINK-5-CHANGED` interface Fa0/23 changed to up and `%LINEPROTO-5-UPDOWN` line protocol changed to up. However, the `show spanning-tree vlan 10` output visible in the screenshot precedes the `no shutdown` command and still shows Fa0/24 as Root/FWD. **Do not mark STP recovery verified yet.** Next run a fresh `do show spanning-tree vlan 10` on WA-ASW-01 and confirm Fa0/23 Root/FWD and Fa0/24 Altn/BLK after convergence.
+
+## Step 66 — Recovery to preferred STP path verified
+
+User executed `no shutdown` on WA-ASW-01 Fa0/23 and then ran a fresh `do show spanning-tree vlan 10`. The final screenshot shows Root ID priority 4106, MAC 0030.F2B6.B95D (WA-DSW-01), root path cost 19, root port 23/Fa0/23, with **Fa0/23 Root/FWD** and **Fa0/24 Alternate/BLK**. Thus the preferred access path was restored and the redundant path blocked again. The STP role/state sequence was verified before failover, during link failure, and after recovery; no endpoint ping, application testing, or quantitative convergence measurement was performed. The original screenshot is available in the chat and is not yet committed to the repository. New STP changes have not yet been confirmed saved to startup-config.
