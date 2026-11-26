@@ -71,3 +71,7 @@ Step 54: Screenshot of `do show vlan brief` confirmed all nine approved VLANs (1
 ## WA-ASW-01 — Both trunks carry approved VLANs
 
 Step 55 CLI screenshot verified Fa0/23 and Fa0/24 are 802.1Q trunks, mode on, native VLAN 1. All nine approved VLANs plus VLAN 1 were present in both allowed-and-active and STP-forwarding/not-pruned listings. An unsupported `show interface trunk brief` attempt was corrected to `do show interface trunk`. The evidence proves access-side trunk VLAN availability, not end-to-end connectivity or link-failure redundancy. Next: inspect STP for a single VLAN. New screenshot is not yet uploaded.
+
+## WA-ASW-01 — VLAN 10 STP baseline
+
+Step 56 CLI screenshot: spanning-tree protocol IEEE, root ID priority 32778 and MAC 0001.43C9.5CCD; local Bridge ID priority 32778 and MAC 0001.C9D7.6A60. Fa0/24 is Root/FWD (cost 19), Fa0/23 Designated/FWD. No blocked ports visible on ASW-01 for VLAN 10. Next: inspect WA-DSW-02 `show spanning-tree vlan 10` to confirm which bridge is root before changing priorities. [STP record](../testing/WA-STP-vlan10-baseline.md). Latest screenshot awaiting separate upload.
