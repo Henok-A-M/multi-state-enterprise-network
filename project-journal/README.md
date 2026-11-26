@@ -75,3 +75,7 @@ Step 55 CLI screenshot verified Fa0/23 and Fa0/24 are 802.1Q trunks, mode on, na
 ## WA-ASW-01 — VLAN 10 STP baseline
 
 Step 56 CLI screenshot: spanning-tree protocol IEEE, root ID priority 32778 and MAC 0001.43C9.5CCD; local Bridge ID priority 32778 and MAC 0001.C9D7.6A60. Fa0/24 is Root/FWD (cost 19), Fa0/23 Designated/FWD. No blocked ports visible on ASW-01 for VLAN 10. Next: inspect WA-DSW-02 `show spanning-tree vlan 10` to confirm which bridge is root before changing priorities. [STP record](../testing/WA-STP-vlan10-baseline.md). Latest screenshot awaiting separate upload.
+
+## WA-DSW-01 — VLAN 10 primary STP root configured
+
+Step 59 verified with screenshot: entered `spanning-tree vlan 10 priority 4096`; WA-DSW-01 then reported Root ID priority 4106, MAC 0030.F2B6.B95D and `This bridge is the root`. Fa0/1 transitioned from Root/FWD to Designated/FWD. Next: set and verify the secondary root priority on WA-DSW-02, then plan the distribution Layer 2 interconnect. See [STP test record](../testing/WA-STP-vlan10-baseline.md).
