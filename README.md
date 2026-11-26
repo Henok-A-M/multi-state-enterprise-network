@@ -2,7 +2,7 @@
 
 Design, implementation, and security of a multi-state Cisco enterprise network connecting three geographically distributed offices.
 
-**Status:** Phase 2 — Washington headquarters implementation in progress. All four core-to-distribution routed links and OSPF Area 0 configured and tested; controlled OSPF failover and preferred route recovery verified; final recovery ping verified 5/5. Routing configuration saves confirmed by user. Phase 2B: first access-switch dual trunks verified; nine VLANs created on WA-DSW-02. Step 48 completed on WA-ASW-01: VTP Transparent verified by user; distribution switches pending.
+**Status:** Phase 2 — Washington headquarters implementation in progress. All four core-to-distribution routed links and OSPF Area 0 configured and tested; controlled OSPF failover and preferred route recovery verified; final recovery ping verified 5/5. Routing configuration saves confirmed by user. Phase 2B: first access-switch dual trunks and VLAN 10 STP failover/recovery verified; nine VLANs created on WA-DSW-02. Step 48 completed on WA-ASW-01: VTP Transparent verified by user; distribution switches pending.
 
 ## Overview
 
@@ -46,7 +46,7 @@ The lab will use representative endpoints rather than 550 individual simulated d
 | WA OSPF failover and recovery | Alternate and restored path pings 5/5; preferred route restored | [Failover test](testing/WA-OSPF-failover-recovery.md) |
 | WA access-layer pilot | Four trunk endpoints operational; nine VLANs active on DSW-02; VTP Transparent verified on ASW-01 and both distribution switches; nine VLANs verified on DSW-02 and ASW-01, with DSW-01 creation confirmed by user; trunk VLAN activation check pending | [Trunks](configurations/WA/04-first-access-switch-trunks.md), [VLAN design and resume checkpoint](documentation/WA-vlan-design-and-vtp-checkpoint.md) |
 
-| WA STP VLAN 10 baseline | ASW-01 root port Fa0/24 FWD, designated Fa0/23 FWD; root identity to verify | [STP baseline](testing/WA-STP-vlan10-baseline.md) |
+| WA STP VLAN 10 failover/recovery | DSW-01 primary (4096), DSW-02 secondary (8192); ASW-01 backup uplink activated on failure and blocked again after recovery | [STP test record](testing/WA-STP-vlan10-baseline.md) |
 
 ## Repository structure
 
