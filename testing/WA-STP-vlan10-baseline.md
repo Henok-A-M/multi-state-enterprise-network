@@ -51,3 +51,7 @@ Applied `spanning-tree vlan 10 priority 8192` to WA-DSW-02. The follow-up `do sh
 - Root path cost 38, Fa0/1 Root/FWD, port cost 19, still reaching the root through WA-ASW-01.
 
 This validates the intentional primary/secondary root order for VLAN 10 only. Remaining VLAN priorities, physical access resiliency, and a direct inter-distribution Layer 2 trunk are not implemented or tested. Screenshot reviewed in chat but not uploaded to GitHub.
+
+## Step 63–64 — Direct distribution trunk connected, root-side STP checked
+
+User confirmed Copper Cross-Over interconnect between WA-DSW-01 Fa0/24 and WA-DSW-02 Fa0/24 after configuring 802.1Q trunk mode on both ends. CLI screenshot from **WA-DSW-01** shows Fa0/24 link and line protocol up, and `do show spanning-tree vlan 10` shows the switch remains VLAN 10 root (priority 4106, MAC 0030.F2B6.B95D). Fa0/1 and Fa0/24 both show Designated/FWD, cost 19; this is normal for the root bridge. The screenshot does **not** establish the blocking state on the access switch. Next: inspect WA-ASW-01 `do show spanning-tree vlan 10` to verify that redundant Layer 2 path is blocked where expected. The new screenshot has not been uploaded to the repository.
