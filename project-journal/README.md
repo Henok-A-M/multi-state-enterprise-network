@@ -63,3 +63,7 @@ Screenshot shows VTP Operating Mode Transparent, configuration revision 0, five 
 ## WA-DSW-01 — Nine-VLAN configuration completed
 
 User confirmed completing the nine approved VLANs on WA-DSW-01 after being instructed to create them and verify with `do show vlan brief`. This is user-reported completion; a fresh screenshot has not been received. Both distribution switches are now reported to contain the VLAN plan. Next: create the same VLANs on WA-ASW-01 and validate VLAN activation on both trunks.
+
+## WA-ASW-01 — VLAN database verified
+
+Step 54: Screenshot of `do show vlan brief` confirmed all nine approved VLANs (10, 20, 30, 40, 50, 60, 70, 99, 999) active on the first access switch. No access ports assigned yet. VTP Transparent mode was previously confirmed. Next: verify VLANs active on Fa0/23 and Fa0/24 802.1Q trunks. Latest screenshot is not yet uploaded to the repository.
