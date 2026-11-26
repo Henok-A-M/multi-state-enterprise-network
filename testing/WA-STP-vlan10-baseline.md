@@ -30,3 +30,14 @@ The Step 56 and Step 57 screenshots were reviewed in chat but have not yet been 
 ## Step 58 — WA-DSW-01 verified
 
 Read-only `do show spanning-tree vlan 10` screenshot showed Root ID priority 32778, MAC 0001.43C9.5CCD (same VLAN 10 root previously verified on WA-DSW-02), cost 38, root port Fa0/1. Local Bridge ID priority 32778 and MAC 0030.F2B6.B95D; Fa0/1 has role Root, state FWD, port cost 19. With the known physical cabling, DSW-01 currently reaches the DSW-02 root over its Fa0/1 through ASW-01 and the ASW-01→DSW-02 link. This uses the access switch as Layer 2 transit and is not the desired final distribution design. No STP priorities or direct inter-distribution link configured yet. Next: plan/control primary/secondary VLAN root priorities, then add and validate a direct Layer 2 distribution trunk and STP blocking behavior. Step 58 screenshot has not yet been uploaded.
+
+## Step 59 — Intentional VLAN 10 root election on WA-DSW-01
+
+Configured on WA-DSW-01 global configuration mode:
+
+```text
+spanning-tree vlan 10 priority 4096
+do show spanning-tree vlan 10
+```
+
+Screenshot verified `Root ID Priority 4106`, root MAC `0030.F2B6.B95D`, and the explicit IOS text `This bridge is the root`. Local Bridge ID is also priority 4106; Fa0/1 changed from Root/FWD to Designated/FWD. The effective priority is base 4096 plus VLAN 10 system ID extension. This confirms the intended preferred root on the local switch; root convergence on other switches should be checked separately. Backup STP priority on WA-DSW-02 and a direct DSW-to-DSW Layer 2 connection remain pending. Original screenshot has not yet been uploaded to GitHub.
