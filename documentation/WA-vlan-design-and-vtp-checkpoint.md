@@ -32,7 +32,7 @@ Use VTP Transparent mode on participating Layer 2 switches, with explicitly mana
 
 ## Resume instructions
 
-Step 48 completed on WA-ASW-01 with user-confirmed verification. Next: create the nine approved VLANs on WA-ASW-01, verify with `show vlan brief`, then check trunk VLAN activation. ASW-01 was previously verified in VTP Transparent mode. Explain only commands not previously reviewed. Inspect and configure VTP policy on both distribution switches, verify local VLAN databases, create missing VLANs where required, then implement controlled trunk VLAN lists, native VLAN consistency, STP, SVIs and HSRP. VLAN propagation, tagged endpoint traffic and Layer 2 failover have not been validated.
+Step 48 completed on WA-ASW-01 with user-confirmed verification. Step 54 completed: WA-ASW-01 screenshot of `do show vlan brief` verified VLANs 10, 20, 30, 40, 50, 60, 70, 99, and 999 all active, in addition to defaults. No endpoint access ports assigned to these VLANs. Next: inspect `do show interfaces trunk` on WA-ASW-01 to verify allowed and active VLANs; trunk hardening and end-to-end traffic tests remain pending. Explain only commands not previously reviewed. Inspect and configure VTP policy on both distribution switches, verify local VLAN databases, create missing VLANs where required, then implement controlled trunk VLAN lists, native VLAN consistency, STP, SVIs and HSRP. VLAN propagation, tagged endpoint traffic and Layer 2 failover have not been validated.
 
 ## Persistence and evidence
 
