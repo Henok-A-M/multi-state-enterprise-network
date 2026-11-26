@@ -80,3 +80,7 @@ User entered `no shutdown` on WA-ASW-01 Fa0/23. Screenshot confirms `%LINK-5-CHA
 ## Step 66 — Recovery to preferred STP path verified
 
 User executed `no shutdown` on WA-ASW-01 Fa0/23 and then ran a fresh `do show spanning-tree vlan 10`. The final screenshot shows Root ID priority 4106, MAC 0030.F2B6.B95D (WA-DSW-01), root path cost 19, root port 23/Fa0/23, with **Fa0/23 Root/FWD** and **Fa0/24 Alternate/BLK**. Thus the preferred access path was restored and the redundant path blocked again. The STP role/state sequence was verified before failover, during link failure, and after recovery; no endpoint ping, application testing, or quantitative convergence measurement was performed. The original screenshot is available in the chat and is not yet committed to the repository. New STP changes have not yet been confirmed saved to startup-config.
+
+## Step 68–69 — Distribution configuration saves
+
+After restoring WA-DSW-01 Fa0/23 to an administratively enabled state (the interface can still be down if unused), user confirmed saving WA-DSW-01 using `copy running-config startup-config`. User likewise confirmed completing the same startup-config save on WA-DSW-02. Both saves are user-reported; `[OK]` output was not separately captured in chat. The ASW-01 save was previously confirmed. Next: save the entire Packet Tracer `.pkt` project with Ctrl+S; refreshed Packet Tracer file not yet uploaded to GitHub.
