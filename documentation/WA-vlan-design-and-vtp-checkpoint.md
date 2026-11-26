@@ -28,11 +28,11 @@ Observed results:
 
 ## Proposed design — not implemented
 
-Use VTP Transparent mode on participating Layer 2 switches, with explicitly managed local VLAN databases, to reduce the risk of unintended automatic database changes. Transparent mode does not automatically apply received VLAN updates; it may forward VTP messages depending on version and configuration. WA-ASW-01 was subsequently configured with `vtp mode transparent`; the user verified `VTP Operating Mode : Transparent` using `do show vtp status`. Other switches remain unverified for Transparent mode.
+Use VTP Transparent mode on participating Layer 2 switches, with explicitly managed local VLAN databases, to reduce the risk of unintended automatic database changes. Transparent mode does not automatically apply received VLAN updates; it may forward VTP messages depending on version and configuration. WA-ASW-01 was subsequently configured with `vtp mode transparent`; the user verified `VTP Operating Mode : Transparent` using `do show vtp status`. WA-DSW-02 was then configured with `vtp mode transparent` and the user reported completion after being instructed to verify the mode. Retention of its nine VLANs is awaiting a fresh `show vlan brief` check. WA-DSW-01 remains unverified for Transparent mode.
 
 ## Resume instructions
 
-Step 48 completed on WA-ASW-01 with user-confirmed verification. Next, inspect VTP status on WA-DSW-02 before changing its mode. Explain each command, verify its effect, and confirm understanding before moving on. Inspect and configure VTP policy on both distribution switches, verify local VLAN databases, create missing VLANs where required, then implement controlled trunk VLAN lists, native VLAN consistency, STP, SVIs and HSRP. VLAN propagation, tagged endpoint traffic and Layer 2 failover have not been validated.
+Step 48 completed on WA-ASW-01 with user-confirmed verification. Next: confirm WA-DSW-02 VLANs 10, 20, 30, 40, 50, 60, 70, 99 and 999 remain active using `do show vlan brief`; then inspect and configure WA-DSW-01 VTP mode. Explain only commands not previously reviewed. Inspect and configure VTP policy on both distribution switches, verify local VLAN databases, create missing VLANs where required, then implement controlled trunk VLAN lists, native VLAN consistency, STP, SVIs and HSRP. VLAN propagation, tagged endpoint traffic and Layer 2 failover have not been validated.
 
 ## Persistence and evidence
 
