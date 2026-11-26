@@ -55,3 +55,16 @@ This validates the intentional primary/secondary root order for VLAN 10 only. Re
 ## Step 63–64 — Direct distribution trunk connected, root-side STP checked
 
 User confirmed Copper Cross-Over interconnect between WA-DSW-01 Fa0/24 and WA-DSW-02 Fa0/24 after configuring 802.1Q trunk mode on both ends. CLI screenshot from **WA-DSW-01** shows Fa0/24 link and line protocol up, and `do show spanning-tree vlan 10` shows the switch remains VLAN 10 root (priority 4106, MAC 0030.F2B6.B95D). Fa0/1 and Fa0/24 both show Designated/FWD, cost 19; this is normal for the root bridge. The screenshot does **not** establish the blocking state on the access switch. Next: inspect WA-ASW-01 `do show spanning-tree vlan 10` to verify that redundant Layer 2 path is blocked where expected. The new screenshot has not been uploaded to the repository.
+
+## Step 64 — Confirmed STP blocking on first access switch
+
+After the new DSW-01 Fa0/24 ↔ DSW-02 Fa0/24 trunk was connected, a `show spanning-tree vlan 10` screenshot from **WA-ASW-01** showed:
+
+- Root Bridge ID priority 4106, MAC 0030.F2B6.B95D (WA-DSW-01).
+- Root path cost 19 via access interface Fa0/23.
+- **Fa0/23: Root / FWD**, cost 19, primary path toward DSW-01.
+- **Fa0/24: Altn / BLK**, cost 19, redundant path toward DSW-02 blocked by STP.
+
+This verifies that IEEE STP created a loop-free forwarding topology for VLAN 10 after the direct distribution interconnect. It does not yet establish failover behavior, end-to-end application connectivity, or spanning-tree decisions for the other eight VLANs. The user initially attempted `do show` from privileged EXEC mode (invalid) and successfully corrected to `show spanning-tree vlan 10`. Screenshot reviewed in the session; separate upload not yet performed.
+
+**Next:** controlled failover test. On WA-ASW-01, shut the root-path interface Fa0/23 only, then verify STP reconverges and Fa0/24 moves to Root/FWD. Restore Fa0/23 afterward and confirm normal roles return. Record observed status; do not claim uninterrupted service without packet monitoring.
