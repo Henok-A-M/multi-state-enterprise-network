@@ -47,3 +47,7 @@ Retained the 2950-24 access switches due to distribution Gigabit port constraint
 ![21-WA-ASW-01-VTP-baseline](../screenshots/21-WA-ASW-01-VTP-baseline.png)
 
 [Complete screenshot index](../screenshots/README.md)
+
+## Washington headquarters — WA-ASW-01 VTP Transparent verified
+
+Entered `vtp mode transparent` on WA-ASW-01, then ran `do show vtp status`. User confirmed that VTP Operating Mode displays Transparent. The command changes local VTP database behavior, not VLAN interface addressing or trunk status. No VTP Transparent configuration yet verified on distribution switches. New screenshot and configuration save pending. Next: inspect WA-DSW-02 VTP status before choosing the next configuration action. See [VLAN/VTP checkpoint](../documentation/WA-vlan-design-and-vtp-checkpoint.md).
