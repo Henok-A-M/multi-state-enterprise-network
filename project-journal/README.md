@@ -59,3 +59,7 @@ CLI screenshot verified `VTP Operating Mode : Transparent`, configuration revisi
 ## WA-DSW-01 — VTP and VLAN inventory verified
 
 Screenshot shows VTP Operating Mode Transparent, configuration revision 0, five default VLANs only. No need to configure VTP mode again. Nine approved VLANs are still absent from WA-DSW-01 and require local creation. Next: implement and verify VLAN database on DSW-01.
+
+## WA-DSW-01 — Nine-VLAN configuration completed
+
+User confirmed completing the nine approved VLANs on WA-DSW-01 after being instructed to create them and verify with `do show vlan brief`. This is user-reported completion; a fresh screenshot has not been received. Both distribution switches are now reported to contain the VLAN plan. Next: create the same VLANs on WA-ASW-01 and validate VLAN activation on both trunks.
