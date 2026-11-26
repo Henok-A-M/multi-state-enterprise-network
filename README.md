@@ -44,7 +44,7 @@ The lab will use representative endpoints rather than 550 individual simulated d
 | Washington routed infrastructure (WA-01–04) | Four direct peer links tested; WA-02 recovery reported | [Port and IP map](documentation/WA-routed-link-map.md), [validation](testing/WA-core-distribution-validation.md), [CDP correction](troubleshooting/WA-03-cdp-port-mapping.md) |
 | WA OSPF Area 0 | Four FULL adjacencies observed; remote subnet ping improved from 0/5 to 5/5 | [Configuration](configurations/WA/03-ospf-area-zero.md), [validation](testing/WA-OSPF-validation.md) |
 | WA OSPF failover and recovery | Alternate and restored path pings 5/5; preferred route restored | [Failover test](testing/WA-OSPF-failover-recovery.md) |
-| WA access-layer pilot | Four trunk endpoints operational; nine VLANs active on DSW-02; VTP Transparent verified on ASW-01; distribution switches pending | [Trunks](configurations/WA/04-first-access-switch-trunks.md), [VLAN design and resume checkpoint](documentation/WA-vlan-design-and-vtp-checkpoint.md) |
+| WA access-layer pilot | Four trunk endpoints operational; nine VLANs active on DSW-02; VTP Transparent verified on ASW-01 and DSW-02; all nine VLANs preserved on DSW-02; DSW-01 pending | [Trunks](configurations/WA/04-first-access-switch-trunks.md), [VLAN design and resume checkpoint](documentation/WA-vlan-design-and-vtp-checkpoint.md) |
 
 ## Repository structure
 
