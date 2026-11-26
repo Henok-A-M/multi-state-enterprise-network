@@ -23,6 +23,6 @@ After creating nine VLANs on WA-ASW-01 and verifying Fa0/23 and Fa0/24 trunks, w
 The local bridge is not the root because its Bridge ID differs from the Root ID. The lowest-cost route from WA-ASW-01 toward the root uses Fa0/24, cabled toward WA-DSW-02. That does not independently prove WA-DSW-02 is the root: verify its own STP Root ID/Bridge ID output. Fa0/23 is designated and also forwarding. No blocked port is visible on ASW-01 for VLAN 10; there may not be a closed Layer 2 loop in this pilot topology.
 
 ## Next
-Run `do show spanning-tree vlan 10` on WA-DSW-02 (or `show spanning-tree vlan 10` from privileged EXEC) to identify the root bridge. Inspect DSW-01 as needed before configuring bridge priorities, STP modes or access-layer failover. Do not infer Layer 2 resilience solely from two links showing trunking or forwarding.
+WA-DSW-02 was subsequently inspected. It is confirmed as VLAN 10 root bridge, with Root ID equal to Bridge ID (priority 32778, MAC 0001.43C9.5CCD); IOS explicitly states `This bridge is the root`. Its Fa0/1 is Designated/FWD, cost 19. Next inspect WA-DSW-01 STP VLAN 10 before choosing priority changes or Layer 2 inter-switch design. Distribution/core uplinks are routed Layer 3 links, so both ASW links forwarding does not establish redundant VLAN gateway behavior or prove a loop-free campus interconnection. Do not infer Layer 2 resilience solely from two links showing trunking or forwarding.
 
-The screenshot was reviewed in chat and has not yet been added to the GitHub screenshot gallery.
+The Step 56 and Step 57 screenshots were reviewed in chat but have not yet been added to the GitHub screenshot gallery.
