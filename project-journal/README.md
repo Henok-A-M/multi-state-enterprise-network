@@ -87,3 +87,7 @@ After shutting WA-ASW-01 Fa0/23, STP VLAN 10 output first displayed Fa0/24 Root/
 ## Washington STP — failover and recovery milestone completed
 
 Step 66 screenshot verified WA-ASW-01 Fa0/23 was restored and returned to Root/FWD, while Fa0/24 returned to Alternate/BLK. Root remained WA-DSW-01 priority 4106, and path cost returned from 38 to 19. We verified VLAN 10 Layer 2 loop prevention, backup-path activation, and preferred-path restoration. No endpoint traffic test or convergence duration measurement yet. Next: save the latest STP changes in Packet Tracer and on relevant devices. [Full STP validation](../testing/WA-STP-vlan10-baseline.md).
+
+## Step 67 — WA-ASW-01 configuration saved (user confirmed)
+
+After successfully verifying VLAN 10 STP recovery, user ran `copy running-config startup-config` on WA-ASW-01. Screenshot showed the default destination filename prompt; the user confirmed completion after being instructed to press Enter. Save is user-reported, `[OK]` not independently shown. Before saving DSW-01, restore its Fa0/23 interface from the earlier accidental shutdown if not already restored; its administrative status remains unverified. Then save both distribution switches and Packet Tracer project.
